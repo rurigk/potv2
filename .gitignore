@@ -1,0 +1,4 @@
+.vscode/*
+.not_used/
+target/
+data/

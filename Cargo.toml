@@ -1,0 +1,32 @@
+[package]
+name = "potv2"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde="1.0.132"
+serde_json="1.0.73"
+url = "2.2.2"
+termion = "2.0.1"
+anyhow = "1.0.66"
+async-recursion = "1.0.0"
+
+[dependencies.reqwest]
+version = "0.11.10"
+features = ["blocking"]
+
+[dependencies.tokio]
+version = "1.0"
+features = ["macros", "rt-multi-thread", "signal", "time"]
+
+[dependencies.poise]
+version = "0.4.1"
+
+[dependencies.songbird]
+version = "0.3.0"
+features = ["yt-dlp"]
+
+[dev-dependencies]
+tokio-test = "0.4.2"
